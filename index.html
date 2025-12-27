@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess Number + Hangman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Guess The Number Card -->
+    <div class="game-card">
+      <h1>🎯 Guess The Number</h1>
+      <p>Guess a number between <b>1 and 100</b></p>
+
+      <input type="number" id="guessInput" placeholder="Enter your guess">
+      <button id="guessBtn">Guess</button>
+
+      <p id="message"></p>
+      <p id="attempts"></p>
+
+      <button class="reset" id="resetBtn">🔄 Restart</button>
+
+      <p>Test your intuition in this Guess the Number Hangman Game.Every wrong guess brings the hangman closer to completion—think smart and win before time runs out!</p>
+      <p>Think smart—use a binary search strategy to beat the hangman faster!</p>
+
+
+
+    </div>
+
+    <!-- Hangman Card -->
+    <div class="game-card hangman-card">
+      <h1>☠ Hangman</h1>
+
+      <img id="hangmanImg" src="images/0.jpg" alt="Hangman">
+
+      <p id="hangmanText">Wrong Attempts: 0 / 6</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

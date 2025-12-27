@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+
+  background-image: url("images/background.jpg");
+  background-size: cover;        /* fills the screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;  /* no tiling */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: stretch; /* ensures equal height cards */
+}
+
+/* Shared card styling */
+.game-card {
+  background-image: url("images/guess_bg.jpg");
+  background-size: cover;        /* fills entire card */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;
+
+  padding: 80px;
+  width: 360px;
+  border-radius: 12px;
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Headings */
+.game-card h1 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #667eea;
+  color: white;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Restart button */
+.reset {
+  background: #e53e3e;
+}
+
+.reset:hover {
+  background: #c53030;
+}
+
+/* Message text */
+#message {
+  margin-top: 20px;
+  font-weight: bold;
+  min-height: 24px; /* prevents layout jump */
+}
+
+/* ------------------ */
+/* Hangman card only */
+/* ------------------ */
+
+.hangman-card {
+  background-image: url("images/hangman_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+.hangman-card img {
+  width: 300px;        /* scaled up for larger card */
+  max-width: 100%;
+  margin: 30px auto;
+}
+
+#hangmanText {
+  font-weight: bold;
+  margin-top: 10px;
+}
